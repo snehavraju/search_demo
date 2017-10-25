@@ -1,0 +1,17 @@
+<div class="container" id="searchbar" >
+  
+     <div class="row">
+      <div class="col-sm-11">
+     <input #searchBox  type="text" class="form-control search " (keyup.enter)="search(searchBox.value)" placeholder=" search for a movie ... " id="searchbar" >
+    </div>
+
+    <div class="col-sm-1">
+  
+     <button (click)="search(searchBox.value)" type="button" class="btn btn-success " style="margin-top: 50px;" >Search  <i class="fa fa-search" style="font-size:18px;"></i></button>
+   </div>
+       </div> 
+
+     <br/>
+     
+  </div>
+  
