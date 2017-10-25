@@ -11,7 +11,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class AppComponent {
   title = 'app';
 
-  private results:any;
+  private result:any;
 
        constructor(
         private searchService: SearchService,
@@ -22,7 +22,7 @@ export class AppComponent {
     search(term:string){
       return this.searchService.search(term)
       .subscribe(result => {
-          this.results = result;
+          this.result = result;
           console.log(result);
       });
   }
