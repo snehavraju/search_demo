@@ -27,7 +27,7 @@ export class SearchService{
     
     var headers = new Headers();
     headers.append('Content-Type', 'application/json; charset=utf-8');
-    headers.append('Authorization','Basic bmVvNGo6TmVvNGo=')
+    headers.append('Authorization','Basic bmVvNGo6YWJjZGVmZw==')
     
     return this.http.post(this.searchUrl, JSON.stringify({query:"match(p:Person{name:'"+term+"'})-[r]-(b) return p,r,b"}),{ headers:headers }).map(response=>response.json()as QueryDetails);
   } 
