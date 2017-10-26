@@ -1,3 +1,4 @@
+import { SearchComponent } from './search.component';
 import { Http, HttpModule } from '@angular/http';
 import { SearchService } from './search.service';
 
@@ -14,7 +15,7 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    
+    SearchComponent
   ],
   imports: [
     BrowserModule,
